@@ -42,7 +42,7 @@ Run the `generate_inputs.m` script in MATLAB to generate the random input vector
 >> generate_inputs
 ```
 This will generate a file input_vectors.txt containing 10,000 random test vectors.
-## step 2:Run ModelSim Simulation
+### step 2:Run ModelSim Simulation
 Open the command window or command prompt, navigate to the directory where your project is saved, and then navigate to the simulation folder. In ModelSim, run the simulation by typing:
 ```bash
 >>vsim -do simulate_all.do
