@@ -36,29 +36,49 @@ This project focuses on the design and analysis of 8-bit Kogge-Stone and Ladner-
 
 ## How to Run the Project
 
-### Step 1: Generate Input Vectors
+### Step 1: Download or Clone the Repository
+
+First, download or clone this GitHub repository to your local machine.
+
+- **Option 1: Clone using Git**  
+  Open a terminal and run the following command:
+  ```bash
+  git clone https://github.com/vijayasankarankarthik/Approximate_parallel_prefix_adders.git
+  cd Approximate_parallel_prefix_adders
+  ```
+
+- **Option 2: Download as ZIP**  
+  1. Go to [this link](https://github.com/vijayasankarankarthik/Approximate_parallel_prefix_adders).
+  2. Click on the green **Code** button.
+  3. Select **Download ZIP**.
+  4. Extract the ZIP file on your computer.
+
+### Step 2: Generate Input Vectors
+
 Run the `generate_inputs.m` script in MATLAB to generate the random input vectors for testing:
 
-```matlab```
-```
+```matlab
 >> generate_inputs
 ```
-This will generate a file input_vectors.txt containing 10,000 random test vectors.
-### Step 2:Run ModelSim Simulation
-Open the command window or command prompt, navigate to the directory where your project is saved, and then navigate to the simulation folder. In ModelSim, run the simulation by typing:
 
-```bash```
-```
->> vsim -do simulate_all.do
-```
-This will simulate all the Verilog modules and generate the output files in the simulation folder.
+This will generate a file `input_vectors.txt` containing 10,000 random test vectors.
 
-### Step 3: Analyze Error Metrics
+### Step 3: Run ModelSim Simulation
+
+Open the command window or command prompt, navigate to the directory where your project is saved, and then go to the `simulation` folder. In ModelSim, run the simulation by typing:
+
+```bash
+vsim -do simulate_all.do
+```
+
+This will simulate all the Verilog modules and generate the output files in the `simulation` folder.
+
+### Step 4: Analyze Error Metrics
+
 After simulation, run the `analyze_errors.m` script in MATLAB to calculate the error metrics using the output files from the simulation:
 
-```matlab```
-```
+```matlab
 >> analyze_errors
 ```
-This will compute various error metrics (such as Error Rate, MSE, etc.) for the adders.
 
+This will compute various error metrics (such as Error Rate, MSE, etc.) for the adders.
