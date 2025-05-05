@@ -38,20 +38,23 @@ This project focuses on the design and analysis of 8-bit Kogge-Stone and Ladner-
 
 ### Step 1: Generate Input Vectors
 Run the `generate_inputs.m` script in MATLAB to generate the random input vectors for testing:
-```matlab
+```matlab```
+```
 >> generate_inputs
 ```
 This will generate a file input_vectors.txt containing 10,000 random test vectors.
 ### Step 2:Run ModelSim Simulation
 Open the command window or command prompt, navigate to the directory where your project is saved, and then navigate to the simulation folder. In ModelSim, run the simulation by typing:
-```bash
+```bash```
+```
 >> vsim -do simulate_all.do
 ```
 This will simulate all the Verilog modules and generate the output files in the simulation folder.
 
 ### Step 3: Analyze Error Metrics
 After simulation, run the `analyze_errors.m` script in MATLAB to calculate the error metrics using the output files from the simulation:
-```matlab
+```matlab```
+```
 >> analyze_errors
 ```
 This will compute various error metrics (such as Error Rate, MSE, etc.) for the adders.
