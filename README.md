@@ -1,6 +1,6 @@
 # Design and Analysis of 8-bit Approximate Parallel Prefix Adders for Kogge-Stone and Ladner-Fischer Adders
 
-**Author**: Vijaya Sankaran K
+**Author**: Vengatesh M
 
 ## Project Overview
 This project focuses on the design and analysis of 8-bit Kogge-Stone and Ladner-Fischer parallel prefix adders, both in their exact and approximate forms. The approximate adders are evaluated using error metrics to assess their performance in terms of accuracy and efficiency. The project is implemented using Verilog for hardware design, MATLAB for error analysis, and ModelSim for simulation.
